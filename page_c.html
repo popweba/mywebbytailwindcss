@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <!-- ส่วนของ HEAD -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- ตั้งค่าการใช้งาน Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+        />
+        <!-- ตั้งค่าการใช้งาน Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <!-- ตั้งค่าการใช้งาน TailwindCSS  -->
+        <script src="http://cdn.tailwindcss.com"></script>
+        <!-- ตั้งค่าการใช้งาน Google Font กับ TailwindCSS -->
+        <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: {
+                    bebus: ["Bebas Neue"],
+                    prompt: ["Prompt"],
+                    inter: ["Inter"],
+                },
+            },
+            },
+        };
+        </script>
+    </head>
+ 
+    <!-- ส่วนของ BODY -->
+    <body class="bg-[#000C58]">
+        <!-- ส่วนที่ 1 Nav Bar -->
+        <div class="flex items-center bg-[#060135] py-5 px-[100px]">
+            <!-- ส่วนเมนูด้านซ้าย -->
+            <div class="w-full flex justify-start">
+                <span class="text-white uppercase font-bebus text-3xl">
+                    Kankangwal Minkaew
+                </span>
+            </div>
+            <!-- ส่วนเมนูด้านขวา -->
+            <div class="w-full flex justify-end gap-5">
+                <a href="#" class="text-white font-inter hover:text-yellow-300">Work</a>
+                <a href="#" class="text-white font-inter hover:text-yellow-300">About</a>
+                <a href="#" class="text-white font-inter hover:text-yellow-300">Contact</a>
+            </div>
+        </div>
+ 
+        <!-- ส่วนที่ 2 Hero Section -->
+        <div class="flex mx-[280px] gap-12 mt-[80px]">
+            <!-- ส่วนฝั่งซ้าย CTA -->
+            <div class="w-full flex flex-col gap-2">
+                <span class="text-white text-6xl font-bebus">
+                    HI, I AM
+                </span>
+                <span class="text-white text-6xl font-bebus">KANKANGWAL M.</span>
+                <span class="text-gray-400 font-prompt text-xl">
+                    นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย
+                </span>
+                <span class="text-gray-400 font-prompt text-xl">
+                    ที่มีความหลงใหลในการสร้าง เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้
+                </span>
+                <div class="mt-10 flex items-center gap-5">
+                    <a href="#" class="bg-[#7A99E9] text-lg font-prompt font-bold py-3 px-6
+                                       rounded-full hover:bg-[#060135] hover:text-white">
+                        CONTACT ME 😁
+                    </a>
+                    <a href="#" class="bg-gray-800 text-[#7A99E9] text-lg flex
+                                       justify-center items-center py-3 px-3 rounded-full hover:text-white">
+                        &nbsp;<i class="bi bi-linkedin"></i>&nbsp;
+                    </a>
+                    <a href="#" class="bg-gray-800 text-[#7A99E9] text-lg flex
+                                       justify-center items-center py-3 px-3 rounded-full hover:text-white">
+                        &nbsp;<i class="bi bi-github"></i>&nbsp;
+                    </a>
+                </div>
+            </div>
+ 
+            <!-- ส่วนฝั่งขวา แสดงรูป -->
+            <div class="w-full">
+                <img src="./imges/person3.png" alt="person3" class="w-[350px] rounded-[40px]">
+            </div>
+        </div>
+ 
+        <!-- ตีเส้นแบ่ง -->
+        <div class="h-[2px] bg-gray-500 mx-10 mt-[40px]"></div>
+ 
+        <!-- ส่วนที่ 3 About ME -->
+        <div class="flex mt-[40px] mx-[280px] gap-12">
+            <!-- ส่วนข้อความ ABOUT ME -->
+            <div class="w-full">
+                <span class="text-white font-bebus text-6xl">
+                    ABOUT ME
+                </span>
+            </div>
+ 
+            <!-- ส่วนของรายละเอียดของ About me -->
+            <div class="w-full flex flex-col gap-5">
+                <span class="text-white font-prompt text-xl">
+                    ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงาน<br/>
+                    อยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้น<br/>
+                    ในการทำงานมีพื้นฐานการศึกษาด้าน วิศวกรรมซอฟต์แวร์
+                </span>
+                <span class="text-gray-400 font-prompt text-lg">
+                    ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์<br/>
+                     มีความกระตือรือร้นและอยากรู้ อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ <br/>
+                     ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบ <br/>
+                     เว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม <br/>
+                     FIFA, Diablo กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ
+                </span>
+                <div class="mt-3 flex items-center gap-5">
+                    <a href="#" class="bg-[#7A99E9] text-lg font-prompt font-bold py-3 px-6
+                                       rounded-full hover:bg-[#060135] hover:text-white">
+                        Download RESUME 😁
+                    </a>
+                    <a href="#" class="bg-gray-800 text-[#7A99E9] text-lg flex
+                                       justify-center items-center py-3 px-3 rounded-full hover:text-white">
+                        &nbsp;<i class="bi bi-linkedin"></i>&nbsp;
+                    </a>
+                    <a href="#" class="bg-gray-800 text-[#7A99E9] text-lg flex
+                                       justify-center items-center py-3 px-3 rounded-full hover:text-white">
+                        &nbsp;<i class="bi bi-github"></i>&nbsp;
+                    </a>
+                </div>
+            </div>
+        </div>        
+ 
+        <!-- ส่วนที่ 4 ส่วนแสดงรูป -->
+        <div class="mt-10 flex justify-center mx-[280px]">
+            <img src="./imges/action3.png" alt="action3" class="w-full"/>
+        </div>
+ 
+        <!-- ตีเส้นแบ่ง -->
+        <div class="h-[2px] bg-gray-500 mx-10 mt-[40px]"></div>
+ 
+        <!-- ส่วนที่ 5 MY CAP. -->
+ 
+        <!-- ตีเส้นแบ่ง -->
+ 
+        <!-- ส่วนที่ 6 MY EXP. -->
+ 
+        <!-- ตีเส้นแบ่ง -->
+ 
+        <!-- ส่วนที่ 7 LET'S Connect -->
+        <div class="flex mt-8 mx-[280px] gap-12">
+            <!-- ส่วนด้านซ้าย ข้อความและไอคอน -->
+            <div class="flex flex-col gap-7 w-full">
+                <span class="text-white font-bebus text-6xl">
+                    LET'S CONNECT
+                </span>
+                <span class="font-inter text-gray-200 font-light text-lg">
+                    Say hello at Kankangwal@sau.ac.th
+                    <br />
+                    For maor info, here's my resume
+                </span>
+                <div class="flex gap-5">
+                    <a href="#" class="text-[#7A99E9] text-xl"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-[#7A99E9] text-xl"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-[#7A99E9] text-xl"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-[#7A99E9] text-xl"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+ 
+            <!-- ส่วนด้านขวา Form ให้ป้อน -->
+            <div class="w-full flex flex-col gap-2">
+                <span class="font-inter text-gray-200 font-light">Name</span>
+                <input type="text" name="" id="" class="p-2 rounded-[5px] bg-[#060135]" />
+                <span class="font-inter text-gray-200 font-light">Email</span>
+                <input type="text" name="" id="" class="p-2 rounded-[5px] bg-[#060135]" />
+                <span class="font-inter text-gray-200 font-light">Subject</span>
+                <input type="text" name="" id="" class="p-2 rounded-[5px] bg-[#060135]" />
+                <span class="font-inter text-gray-200 font-light">Message</span>
+                <textarea name="" id="" cols="30" rows="10" class="p-2 rounded-[5px] bg-[#060135]"></textarea>
+                <br>
+                <button class="bg-[#7A99E9] py-4 rounded-full font-prompt text-lg font-bold w-[250px]">
+                    SUBMIT
+                </button>
+            </div>
+        </div>
+ 
+        <!-- ตีเส้นแบ่ง -->
+        <div class="h-[2px] bg-gray-500 mx-10 mt-[40px]"></div>
+   
+        <!-- ส่วนที่ 8 Copyright -->
+        <div class="text-center my-12">
+            <span class="text-xl text-gray-200 font-prompt">
+                © 2026 Created by NinniN DTI SAU . All rights reserved.
+            </span>
+        </div>
+ 
+    </body>
+</html>

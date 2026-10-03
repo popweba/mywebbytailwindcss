@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Design by HTML CSS</title>
+
+    <!-- นำเข้า Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- นำเข้า Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#87f5a9',      /* สีพื้นหลังเขียวมิ้นต์ */
+                            dark: '#1a3d24',    /* สีตัวอักษรเข้ม */
+                            muted: '#235230',   /* สีข้อความรอง */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Fira Code"', 'Kanit', 'monospace', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-bg font-sans text-brand-dark min-h-screen flex flex-col justify-between px-[60px] pt-[40px] pb-[20px]">
+
+    <main class="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-[40px] items-end">
+        
+        <!-- ฝั่งซ้าย: ข้อความและปุ่ม -->
+        <section class="flex flex-col items-start">
+            <h1 class="text-[3.5rem] font-bold leading-[1.1] text-brand-dark mb-[25px] tracking-[-1px] relative top-[70px] left-[200px]">
+                My Web Design by<br>
+                HTML CSS
+            </h1>
+
+            <p class="text-[1.25rem] leading-[1.6] text-brand-muted mb-[35px] relative top-[70px] left-[200px]">
+                Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit.<br>
+                Cursus imperdiet sed id elementum.<br>
+                Quam vel aliquam sit vulputate.
+            </p>
+
+            <a href="#" class="inline-block bg-[#333333] text-white no-underline text-[1.2rem] font-semibold py-[16px] px-[42px] rounded-full shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-all duration-300 ease-in-out relative top-[70px] left-[200px] hover:bg-[#1a1a1a] hover:-translate-y-[2px] hover:shadow-[0_6px_15px_rgba(0,0,0,0.25)]">
+                Follow Me
+            </a>
+
+            <!-- รูปที่ 1-2: อยู่ใต้ปุ่ม Follow Me เรียงกันแนวนอน -->
+            <div class="flex gap-[10px] mt-[80px] w-full">
+                <div class="flex-1 aspect-[16/9] rounded-[8px] overflow-hidden bg-transparent shadow-none transition-transform duration-300 ease-in-out hover:-translate-y-[5px] relative top-[50px] left-[200px] z-[1]">
+                    <a href="page_a.html" target="_blank">
+                        <img src="./imges/img1.png" alt="Preview 1" class="w-full h-full object-contain object-center block">
+                    </a>
+                </div>
+
+                <div class="flex-1 aspect-[16/9] rounded-[8px] overflow-hidden bg-transparent shadow-none transition-transform duration-300 ease-in-out hover:-translate-y-[5px] relative top-[50px] left-[240px] z-[1]">
+                    <a href="page_b.html" target="_blank">
+                        <img src="./imges/img2.png" alt="Preview 2" class="w-full h-full object-contain object-center block">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ฝั่งขวา: รูปภาพตัวอย่างเว็บ (รูปสูง 2 อัน) -->
+        <section class="grid grid-cols-[1.6fr_1fr] gap-[20px]">
+            <!-- Card Tall 1 -->
+            <div class="col-start-1 col-end-2 h-[clamp(400px,38vw,900px)] rounded-[8px] overflow-hidden bg-transparent shadow-none transition-transform duration-300 ease-in-out hover:-translate-y-[5px] relative top-[50px] left-[120px] z-[1]">
+                <a href="page_c.html" target="_blank">
+                    <img src="./imges/img3.png" alt="Preview 3" class="w-full h-full object-contain object-center block">
+                </a>
+            </div>
+
+            <!-- Card Tall 2 -->
+            <div class="col-start-2 col-end-3 h-[clamp(400px,38vw,900px)] rounded-[8px] overflow-hidden bg-transparent shadow-none transition-transform duration-300 ease-in-out hover:-translate-y-[5px] relative top-[50px] -left-[70px] z-[1]">
+                <a href="page_d.html" target="_blank">
+                    <img src="./imges/img4.png" alt="Preview 4" class="w-full h-full object-contain object-center block">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-[50px] text-brand-dark text-[1.1rem] leading-[1.6]">
+        <p class="font-normal">(รูปและเนื้อหาทั้งหมดใช้เพื่อการศึกษาเท่านั้น)</p>
+        <p class="font-semibold">Created by NinniN SAU</p>
+        <p class="font-semibold">Copyright © 2026 WoW WoW WoW</p>
+    </footer>
+
+</body>
+
+</html>

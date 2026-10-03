@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kankangwal Profile 2026</title>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN & Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        sans: ['Raleway', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#373737',
+                            muted: 'rgb(210, 210, 210)',
+                            accent: '#46a10a',
+                            border: '#62d714',
+                            glow: '#91f54e',
+                            hover: '#adff2f', /* greenyellow */
+                            cardBorder: '#4b4b4b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white margin-0 padding-0">
+
+    <!-- ส่วนของ nav-bar -->
+    <nav class="flex justify-between bg-brand-dark py-[40px] px-[100px] mx-[150px] rounded-b-[20px]">
+        <!-- ส่วน menu -->
+        <div class="flex gap-[60px] font-mono">
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold">Home</a>
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold">Case Studies</a>
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold">Testimonials</a>
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold">Recent work</a>
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold">Get In Touch</a>
+        </div>
+        <!-- ส่วนของ icon -->
+        <div class="flex gap-[30px]">
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold"><i class="bi bi-behance"></i></a>
+            <a href="#" class="text-brand-muted no-underline text-[1.25rem] transition-colors duration-200 hover:text-brand-hover hover:font-bold"><i class="bi bi-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- ส่วนของ hero-profile -->
+    <main class="flex my-[100px] mx-[250px] items-center gap-[150px]">
+        <!-- ส่วนของ info -->
+        <div class="flex flex-col gap-[30px]">
+            <span id="fullname" class="font-sans text-[3.5rem] font-bold text-white">Kankangwal Minkaew</span>
+            <span id="detail" class="font-mono text-brand-muted">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quo maxime quas quia reprehenderit
+                assumenda quos similique nulla, hic vitae deleniti harum laborum corrupti. Autem et sint ab itaque
+                sequi.
+            </span>
+            <a href="#" class="w-[200px] h-[50px] bg-brand-accent text-white no-underline flex justify-center items-center rounded-[5px] border-2 border-brand-border shadow-[0_0_10px_#91f54e]">
+                Let's Get started
+            </a>
+        </div>
+        <!-- ส่วนของ picprofile -->
+        <div class="shrink-0">
+            <img src="./imges/page_b.png ">
+        </div>
+    </main>
+
+    <!-- ส่วนของ worked-with -->
+    <section class="mt-[100px] mr-[250px] mb-[30px] ml-[250px]">
+        <p class="font-mono text-white">Worked with</p>
+    </section>
+
+    <!-- ส่วนของ link-logo -->
+    <section class="mt-0 mr-[250px] mb-[100px] ml-[250px] flex justify-between">
+        <a href="#" class="w-[220px] h-[70px] border-2 border-brand-cardBorder rounded-[8px] flex justify-center items-center transition-all duration-200 hover:border-brand-hover hover:shadow-[0_0_10px_#91f54e]">
+            <img src="./imges/logo1.png" alt="">
+        </a>
+        <a href="#" class="w-[220px] h-[70px] border-2 border-brand-cardBorder rounded-[8px] flex justify-center items-center transition-all duration-200 hover:border-brand-hover hover:shadow-[0_0_10px_#91f54e]">
+            <img src="./imges/logo2.png" alt="">
+        </a>
+        <a href="#" class="w-[220px] h-[70px] border-2 border-brand-cardBorder rounded-[8px] flex justify-center items-center transition-all duration-200 hover:border-brand-hover hover:shadow-[0_0_10px_#91f54e]">
+            <img src="./imges/logo3.png" alt="">
+        </a>
+        <a href="#" class="w-[220px] h-[70px] border-2 border-brand-cardBorder rounded-[8px] flex justify-center items-center transition-all duration-200 hover:border-brand-hover hover:shadow-[0_0_10px_#91f54e]">
+            <img src="./imges/logo4.png" alt="">
+        </a>
+        <a href="#" class="w-[220px] h-[70px] border-2 border-brand-cardBorder rounded-[8px] flex justify-center items-center transition-all duration-200 hover:border-brand-hover hover:shadow-[0_0_10px_#91f54e]">
+            <img src="./imges/logo5.png" alt="">
+        </a>
+    </section>
+
+</body>
+
+</html>

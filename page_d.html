@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keithston Cafe</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Config Fonts ให้ Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#d37243',
+                            brown: '#a04424',
+                            darkbrown: '#8b3a2b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins bg-white text-gray-800">
+
+    <!-- 1. HERO BANNER -->
+    <header
+        class="bg-[url('./imges/Blackground.D.png')] bg-cover bg-center min-h-screen text-white px-6 md:px-20 py-8 flex flex-col justify-between">
+        <!-- Navbar -->
+        <nav class="flex flex-col md:flex-row justify-between items-center gap-4 z-10">
+            <a href="#" class="inline-block">
+                <img src="./imges/Logo.d1.png" alt="Keithston Logo" class="h-20 w-auto object-contain">
+            </a>
+            <ul class="flex gap-6 md:gap-10 text-lg font-medium">
+                <li><a href="#" class="hover:text-brand-orange transition-colors">Home</a></li>
+                <li><a href="#" class="hover:text-brand-orange transition-colors">Blog</a></li>
+                <li><a href="#" class="hover:text-brand-orange transition-colors">Contact Us</a></li>
+                <li><a href="#" class="hover:text-brand-orange transition-colors">Services</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="my-auto max-w-xl text-center md:text-left">
+            <p class="text-brand-orange text-xl font-medium mb-2">Delicious Cafe</p>
+            <h1 class="font-playfair italic text-4xl md:text-6xl leading-tight mb-8">Sweet Treats,<br>Perfect Eats</h1>
+            <div class="flex justify-center md:justify-start items-center gap-6">
+                <button
+                    class="bg-brand-brown hover:bg-brand-darkbrown text-white px-8 py-3 rounded text-xl font-medium transition-colors">Shop
+                    Now</button>
+                <a href="#" class="text-brand-orange hover:text-white text-xl font-medium transition-colors">Learn
+                    More</a>
+            </div>
+        </div>
+        <div></div> <!-- Empty spacer for flex layout -->
+    </header>
+
+    <!-- 2. TOP PRODUCTS -->
+    <section class="max-w-5xl mx-auto my-20 px-5 text-center">
+        <h2 class="font-playfair italic text-4xl md:text-6xl font-semibold mb-12 text-gray-900">Top Products</h2>
+        <div class="flex justify-center items-center">
+            <img src="./imges/D2.2.2.png" alt="Top Products Showcase" class="max-w-full h-auto rounded-lg">
+        </div>
+    </section>
+
+    <!-- 3. EXPLORE & PROMO WRAPPER -->
+  
+        <!-- Promo Banner -->
+        <section
+            class="bg-[url('./imges/BlackgroundD2.png')] bg-contain bg-center bg-no-repeat py-24 px-5 text-center min-h-[550px] flex items-center justify-center">
+            <div class="max-w-xl mx-auto flex flex-col items-center gap-6">
+                <img src="./imges/off20.png" alt="20% Off Your First Order" class="max-w-[80%] md:max-w-md h-auto">
+                <img src="./imges/Lorem.png" alt="Description" class="max-w-[60%] md:max-w-sm h-auto">
+                <a href="#"
+                    class="inline-block bg-brand-brown hover:bg-brand-darkbrown text-white px-7 py-2.5 rounded font-medium mt-2 transition-colors">Learn
+                    More</a>
+            </div>
+        </section>
+
+        <!-- Explore More Section -->
+        <section class="my-14 text-center">
+            <h2 class="font-playfair text-3xl md:text-4xl text-gray-900 mb-6">Explore More</h2>
+            <div
+                class="flex justify-center gap-6 mb-8 border-b border-gray-200 pb-4 flex-wrap text-sm md:text-base font-medium text-gray-500">
+                <span class="text-brand-darkbrown border-b-2 border-brand-darkbrown pb-3 cursor-pointer">Cake</span>
+                <span class="hover:text-brand-darkbrown cursor-pointer transition-colors">Muffins</span>
+                <span class="hover:text-brand-darkbrown cursor-pointer transition-colors">Croissant</span>
+                <span class="hover:text-brand-darkbrown cursor-pointer transition-colors">Bread</span>
+                <span class="hover:text-brand-darkbrown cursor-pointer transition-colors">Tart</span>
+                <span class="hover:text-brand-darkbrown cursor-pointer transition-colors">Favorite</span>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="./imges/D.2.2.png" alt="Explore More Showcase" class="max-w-full h-auto rounded-lg">
+            </div>
+        </section>
+    
+
+    <!-- 4. ABOUT US SECTION -->
+    <section
+        class="bg-[url('./imges/BlackgorundD3.png')] bg-contain bg-center bg-no-repeat py-24 px-5 text-center min-h-[550px] flex items-center justify-center">
+        <div class="max-w-xl mx-auto flex flex-col items-center gap-6">
+            <img src="./imges/About us.png" alt="About us" class="max-w-full h-auto">
+            <img src="./imges/LoremD3.png" alt="About us description" class="max-w-full h-auto">
+            <a href="#"
+                class="inline-block bg-brand-brown hover:bg-brand-darkbrown text-white px-8 py-3 rounded text-lg font-medium transition-colors">Read
+                More</a>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED TREATS SECTION -->
+    <section class="max-w-5xl mx-auto my-20 px-5 text-center">
+        <h2 class="font-playfair italic text-4xl md:text-6xl mb-12 text-gray-900">Featured Treats</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center">
+                <div class="w-full h-70 rounded-lg overflow-hidden mb-4">
+                    <img src="./imges/Dend1.png" alt="Puff Pastry" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="w-full flex justify-between items-center font-semibold text-xl text-gray-900 px-1">
+                    <span>Puff Pastry</span>
+                    <span>8 Baht</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="w-full h-70 rounded-lg overflow-hidden mb-4">
+                    <img src="./imges/Dend2.png" alt="Doughnuts" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="w-full flex justify-between items-center font-semibold text-xl text-gray-900 px-1">
+                    <span>Doughnuts</span>
+                    <span>8 Baht</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="w-full h-70 rounded-lg overflow-hidden mb-4">
+                    <img src="./imges/Dend3.png" alt="Brownies" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="w-full flex justify-between items-center font-semibold text-xl text-gray-900 px-1">
+                    <span>Brownies</span>
+                    <span>8 Baht</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER SECTION -->
+    <footer
+        class="bg-[url('./images/footer-bg.png')] bg-cover bg-center bg-neutral-900 text-gray-300 pt-16 pb-6 text-sm">
+        <div class="max-w-5xl mx-auto px-5">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-5 gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="./imges/Logo.d1.png" alt="Keithston Logo" class="h-10">
+                    <span class="font-semibold tracking-widest text-white">KEITHSTON</span>
+                </div>
+                <div class="flex items-center gap-4 text-white">
+                    <span>Follow us</span>
+                    <div class="flex gap-3 text-brand-orange text-lg">
+                        <a href="#" class="hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-800 mb-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                <div>
+                    <h3 class="text-brand-orange text-xl font-medium mb-5">About Us</h3>
+                    <p class="leading-relaxed">(02) 807-4500</p>
+                    <p class="leading-relaxed">info@sau.ac.th</p>
+                    <p class="leading-relaxed">19/1 Phetkasem Road<br>Nongkham Bangkok<br>10160</p>
+                </div>
+
+                <div>
+                    <h3 class="text-brand-orange text-xl font-medium mb-5">Explore</h3>
+                    <ul class="space-y-2.5">
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Contact us</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-brand-orange text-xl font-medium mb-5">Recent News</h3>
+                    <div class="flex gap-4 items-center mb-4">
+                        <img src="./imges/EndD1.png" alt="News 1" class="w-12 h-12 object-cover rounded">
+                        <div>
+                            <span class="text-xs text-gray-500">June 14, 2025</span>
+                            <p class="text-white">Puff pastry bliss.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <img src="./imges/EndD2.png" alt="News 2" class="w-12 h-12 object-cover rounded">
+                        <div>
+                            <span class="text-xs text-gray-500">June 14, 2025</span>
+                            <p class="text-white">Puff pastry bliss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center border-t border-neutral-800 pt-5 text-gray-500 text-xs">
+                <p>&copy; 2025 Bake House. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
